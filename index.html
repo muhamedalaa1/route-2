@@ -1,0 +1,135 @@
+<html>
+    <head></head>
+    <body>
+        <form style="background-color: 957777;">
+            <!-- <fieldset></fieldset> is used to group related elements
+                    in a form so draws a box around the related elements and
+                    The <legend> tag defines a caption for the <fieldset>
+                    element. 
+                دي بتعمل بوكس كده للفورم وبتحطله عنوان فوق علي الشمال بشكل كويس 
+                والعنوان دا بيتحط بتاج اسمه ليجيند 
+                
+                -->
+            <fieldset>
+                <legend style="background-color: 643A6B;">Personal Data</legend>
+
+                <!-- هنا هنعمل فيلد سيت تانيه عشان نعمل نفس البوكس اللي اتكلمنا عليه ونحطله تاج الليجيند -->
+                <!-- وعشان نخلي الفيرست نام تحت بعض بالظبط والانبوت تحت بعض بالظبط بنعمل جدول بالشكل دا  -->
+                <fieldset style="background-color: 5F264A;">
+                    <legend style="background-color: B0A4A4;">Your Name</legend>
+                    <table >
+                    <tr>
+                        <td><label for="fn">First Name</label></td>
+                        <td>:</td>
+                        <td>
+                            <input required name="firstName" placeholder="Ex:Mohamed" id="fn" type="text">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="sn">Second Name</label></td>
+                        <td>:</td>
+                        <td>
+                            <input required name="SecondName" placeholder="Ex:Alaa" id="sn" type="text">
+                        </td>
+                    </tr>
+                </table>
+                </fieldset>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+
+                <table>
+                    <tr>
+                        <td><label for="phone">Your Phone</label></td>
+                         <td>:</td>
+                        <td><input required type="number" name="phone" id="phone"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">Email</label></td>
+                         <td>:</td>
+                        <td><input required type="email" name="the_mail" id="mail"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass">Password</label></td>
+                         <td>:</td>
+                        <td><input required type="password" name="password" id="pass"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="repass">Re-password</label></td>
+                         <td>:</td>
+                        <td><input required type="password" name="re-pass" id="repass"></td>
+                    </tr>
+                </table>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <!-- هنا هنعمل راديو بوتوننز لازم الاتنين ياخدوا نفس النام علشان نربطهم ببعض ولازم ياخدوا فاليو مختلفه بتدل ع اللي اختارناه وغالبا بتكون زي الفاليو بتاعت اللابل -->
+
+                <input checked type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <br>
+                <br>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">feMale</label>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>    
+
+                <!-- هنا هنعمل اتنين انبوتس نوع شيك بوكس عشان نعدد الاختيارات ونختار اكثر من اجابه 
+                    بنديهم نفس النيم عشان نربطهم ببعض
+                    وفاليو مختلفه زي اللابل غالبا بتدل ع اللى اختارناه 
+                 -->
+
+                <input type="checkbox" name="education" id="st" value="student">
+                <label for="st">Student</label>
+                <br>
+                <br>
+                <input checked type="checkbox" name="education" id="gra" value="graduated">
+                <label for="gra">Graduated</label>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <!-- 
+                    هنا دا تاج السيليكت بنستخدمه عشان يعملنا دروب داون مينيو كده بنختار منه الحاجه اللى عاوزينه ومننساش نعمل النيم له عشان نعرف نمسكه ونبعته للباك اند
+                 وعشان نعمل جواه حاجه شبه الليسه كده بنستخدم الاوبتجروب وجواه الاوبشن 
+                 الاوبتجروب بياخد لابل وبيكون بولد شويه 
+                 وجواه الاوبشن اللى هنختاره ونحطله فاليو ودا مش اجباري لان لو محطتش فاليو هياخد قيمه الفاليو اللى جوا التاج اسكوب
+                -->
+
+                <select name="select">
+                    <option disabled selected>AUC</option>
+                    <optgroup  label="Group 1">
+                        <option value="1st_value">Option 1.1</option>
+                    </optgroup>
+                    <optgroup label="Group 2">
+                        <option value="2nd_Option">Option 2.1</option>
+                        <option value="3rd Option">Option 2.2</option>
+                    </optgroup>
+                    <optgroup label="Group 3">
+                        <option value="4th_Option">Option 3.1</option>
+                        <option value="5th_Option">Option 3.2</option>
+                        <option value="6th_Option">Option 3.3</option>
+                    </optgroup>
+                </select>
+                <br>
+                <br>
+                <!-- بوتون من النوع سبميت عشان يبعت الداتا -->
+                <button style="background-color: black; color: white;" type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
